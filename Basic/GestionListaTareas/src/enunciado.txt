@@ -1,0 +1,13 @@
+Cree una lista mutable para almacenar tareas (cada tarea será una cadena de texto).
+
+Muestre un menú al usuario con las siguientes opciones:
+
+    1. Agregar tarea: Permite al usuario añadir una nueva tarea a la lista.
+
+    2. Ver tareas: Muestra todas las tareas actuales con su índice correspondiente.
+
+    3. Eliminar tarea: Permite al usuario eliminar una tarea seleccionando su índice.
+
+    4. Salir: Termina el programa.
+
+Asegúrate de manejar posibles errores, como intentar eliminar una tarea con un índice inválido.
