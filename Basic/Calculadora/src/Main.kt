@@ -27,7 +27,7 @@ fun main() {
 }
 
 fun realizarOperacion(operacion: String, num1: Int, num2: Int): Int {
-    var resultado = 0
+    var resultado : Int
     // Se utiliza when para determinar la operación a realizar
     when (operacion) {
         "suma" -> resultado = num1 + num2
