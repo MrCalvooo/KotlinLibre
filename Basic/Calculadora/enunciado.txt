@@ -1,0 +1,7 @@
+Solicite al usuario dos números (puedes usar readLine() para capturar la entrada).
+
+Solicite al usuario que elija una operación matemática: suma, resta, multiplicación o división.
+
+Realice la operación seleccionada y muestre el resultado en la consola.
+
+Asegúrate de manejar posibles errores, como la división por cero.
