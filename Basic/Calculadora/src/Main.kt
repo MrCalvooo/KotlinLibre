@@ -27,16 +27,15 @@ fun main() {
 }
 
 fun realizarOperacion(operacion: String, num1: Int, num2: Int): Int {
-    var resultado : Int
     // Se utiliza when para determinar la operación a realizar
-    when (operacion) {
-        "suma" -> resultado = num1 + num2
-        "resta" -> resultado = num1 - num2
-        "multiplicacion" -> resultado = num1 * num2
-        "division" -> resultado = num1 / num2
+    val resultado : Int = when (operacion) {
+        "suma" -> num1 + num2
+        "resta" -> num1 - num2
+        "multiplicacion" -> num1 * num2
+        "division" -> num1 / num2
         // Si se ingresa una operación no válida, se realiza una suma por defecto
         else -> {
-            resultado = num1 + num2
+            num1 + num2
         }
     }
     return resultado
