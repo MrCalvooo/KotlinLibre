@@ -6,7 +6,7 @@ fun main() {
     println("Número: ")
     val number = readln().toInt()
 
-    println("El número $number es positivo?: ${isPositive(number)}")
+    println("El número $number es positivo?: ${number.isPositive()}")
 }
 
-fun isPositive(number: Int): Boolean = number > 0
+fun Int.isPositive(): Boolean = this > 0
