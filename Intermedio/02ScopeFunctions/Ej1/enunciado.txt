@@ -1,0 +1,14 @@
+Crea una función que procese un objeto User, el cual puede tener un campo profile opcional.
+Este profile contiene información como email, name, y settings.
+
+Tu tarea es:
+
+    Verificar que el profile no sea null usando ?.let.
+
+    Usar apply para configurar un nuevo objeto Notification con los datos del usuario.
+
+    Usar also para registrar un mensaje en consola cada vez que se configura una notificación.
+
+    Usar with para ejecutar varias funciones sobre el Notification, como prepare(), send() y log().
+
+    Todo debe fluir sin errores si el profile es null.

@@ -1,0 +1,13 @@
+Estás desarrollando una aplicación para gestionar el inventario de una tienda.
+Cada producto tiene un nombre,
+ una cantidad en stock y un precio. Tu tarea es implementar una función que:
+
+    Reciba un producto con sus datos (puede tener valores nulos).
+
+    Si el nombre es nulo, asigna "Producto desconocido".
+
+    Si la cantidad es nula, asigna 0.
+
+    Si el precio es nulo, asigna un valor predeterminado de 10.0.
+
+    Devuelve un mensaje con los datos del producto procesado.

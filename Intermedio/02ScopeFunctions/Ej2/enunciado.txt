@@ -1,0 +1,17 @@
+Tienes una clase Session que representa una sesión activa de un usuario, con propiedades como status, token, configuración.
+
+Tu tarea es crear una función iniciarSesion(usuario: User) que:
+
+    Verifique que el perfil del User no sea nulo usando ?.let.
+
+    Cree una instancia de Session con apply, ajustando valores como:
+
+        status = "activo"
+
+        token = UUID generado
+
+        configuracion = ajustes del perfil
+
+    Use also para imprimir en consola que la sesión ha sido inicializada.
+
+    Use with para ejecutar funciones como validar(), persistir(), y mostrarResumen().
