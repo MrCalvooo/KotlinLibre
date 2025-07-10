@@ -1,0 +1,23 @@
+Crea una función en Kotlin que modele la configuración de una instancia de una clase Usuario.
+Esta clase debe tener al menos los siguientes atributos: nombre, email, y activo (booleano).
+
+El objetivo es que utilices una expresión lambda con receptor, por ejemplo con apply o run, para:
+
+    Inicializar el objeto Usuario.
+
+    Modificar sus propiedades dentro del cuerpo de la lambda.
+
+    Devolver el objeto completamente configurado.
+
+Restricciones:
+
+    No se permite modificar las propiedades fuera del cuerpo de la lambda.
+
+    El ejercicio debe incluir una función que reciba el objeto Usuario ya configurado y
+    lo imprima en consola.
+
+Pistas:
+
+    Revisa funciones estándar como apply o run.
+
+    Utiliza this como receptor dentro de la lambda.
