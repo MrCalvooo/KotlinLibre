@@ -1,0 +1,25 @@
+Define una clase llamada Tarea con los siguientes atributos:
+
+    titulo: String
+
+    completada: Boolean
+
+    prioridad: Int (de 1 a 5)
+
+Luego:
+
+    Crea una función que devuelva una lista de tres tareas usando apply o run dentro de una expresión
+    lambda con receptor,
+    para inicializar cada objeto.
+
+    Asegúrate de que todas las tareas estén configuradas completamente dentro de la lambda,
+    sin modificaciones fuera de ella.
+
+    Imprime la lista de tareas mostrando claramente sus valores.
+
+🧩 Extra opcional:
+
+    Usa una función mostrarTareas() que recorra la lista con forEach y también aproveche
+    una expresión lambda con receptor si puedes.
+
+    Experimenta con also o let si quieres comparar cómo se comportan frente a apply.
