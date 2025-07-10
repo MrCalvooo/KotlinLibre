@@ -1,0 +1,29 @@
+Crea una función en Kotlin que genere una descripción detallada de un producto utilizando
+la función estándar buildString, que utiliza una expresión lambda con receptor sobre una instancia
+de StringBuilder.
+
+Tu misión:
+
+    Define una clase Producto con al menos estos atributos: nombre, precio, categoria.
+
+    Dentro de la función que genera la descripción, usa buildString y accede a los miembros del
+    Producto directamente mediante el receptor de la lambda.
+
+    El resultado debe ser un String con una descripción como:
+
+    Producto: Cámara X100
+    Precio: 429.99 €
+    Categoría: Electrónica
+
+Condiciones:
+
+    La función debe devolver el String construido.
+
+    No uses concatenaciones fuera de buildString.
+
+Tips:
+
+    El receptor de buildString es StringBuilder, así que puedes usar append() directamente con this.
+
+    Este ejercicio te ayuda a familiarizarte con lambdas con receptor en funciones que no
+    modifican objetos, sino que construyen datos.
