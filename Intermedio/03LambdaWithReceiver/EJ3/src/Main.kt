@@ -34,11 +34,11 @@ fun validarTareas(lista: List<Tarea>): String {
                     mensaje = "${it.titulo} esta por completar"
                 }
             }
-        }.also {
-            if (mensaje.isEmpty()) {
-                mensaje = "Todas las tareas están completas y tienen título"
-            }
         }
+    }
+
+    if (mensaje.isEmpty()) {
+        mensaje = "Todas las tareas están completas y tienen título"
     }
 
     verTareas(copia)
