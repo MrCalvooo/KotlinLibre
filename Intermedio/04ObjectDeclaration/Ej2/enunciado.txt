@@ -1,0 +1,24 @@
+Crea un programa en Kotlin que simule un sistema de registro de usuarios.
+Debes usar una declaración de objeto (object) llamada RegistroUsuarios para
+implementar un singleton que gestione los usuarios registrados. Este objeto debe:
+
+    Contener una lista mutable llamada usuarios que almacene los nombres de los
+    usuarios registrados (de tipo String).
+
+    Tener una función llamada registrarUsuario(nombre: String) que agregue un nuevo usuario a la lista.
+
+    Tener una función llamada mostrarUsuarios() que imprima en consola todos los usuarios registrados.
+
+    Tener una función llamada eliminarUsuario(nombre: String) que elimine
+    un usuario de la lista si existe. Si el usuario no existe,
+    debe imprimir un mensaje indicando que no se encontró.
+
+Finalmente, en el programa principal (main), realiza lo siguiente:
+
+    Registra tres usuarios con nombres diferentes.
+
+    Muestra la lista de usuarios registrados.
+
+    Elimina uno de los usuarios registrados y vuelve a mostrar la lista.
+
+    Intenta eliminar un usuario que no existe y verifica que se imprima el mensaje correspondiente.
