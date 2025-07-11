@@ -1,0 +1,21 @@
+Crea un programa en Kotlin que gestione un sistema de configuración para una aplicación.
+Debes usar una declaración de objeto (object) para implementar un singleton llamado ConfiguracionApp.
+Este objeto debe:
+
+    Contener una propiedad llamada modoOscuro (de tipo Boolean) que indique si el modo oscuro
+    está activado o no. Por defecto, debe estar desactivado (false).
+
+    Tener una función llamada activarModoOscuro() que cambie el valor de modoOscuro a true.
+
+    Tener una función llamada desactivarModoOscuro() que cambie el valor de modoOscuro a false.
+
+    Tener una función llamada mostrarEstado() que imprima en consola si el modo
+    oscuro está activado o desactivado.
+
+Finalmente, en el programa principal (main), realiza lo siguiente:
+
+    Llama a mostrarEstado() para verificar el estado inicial.
+
+    Activa el modo oscuro usando activarModoOscuro() y vuelve a llamar a mostrarEstado().
+
+    Desactiva el modo oscuro usando desactivarModoOscuro() y vuelve a llamar a mostrarEstado().
