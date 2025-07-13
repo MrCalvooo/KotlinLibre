@@ -1,0 +1,18 @@
+Crear un sistema que permita:
+
+    Validar los IDs de las tareas para asegurarse de que cumplen con un formato específico.
+
+    Agrupar las tareas por su estado (TaskStatus) y mostrar un resumen.
+
+    Filtrar tareas por prioridad (Priority).
+
+Requisitos
+
+    Validación de IDs: Implementa una función de extensión para TaskId que valide
+    si el ID es un número positivo.
+
+    Agrupación por estado: Implementa una función que agrupe las tareas por su estado
+    (Pending, InProgress, etc.) y devuelva un resumen con el conteo de tareas por estado.
+
+    Filtrado por prioridad: Implementa una función que filtre las tareas según su prioridad
+    (LOW, MEDIUM, HIGH).
