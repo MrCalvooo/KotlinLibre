@@ -37,7 +37,26 @@ fun TaskId.validateId(): Boolean {
     return valido
 }
 
+fun filterStatus(listaTareas: List<Task>): String {
+    var pending = 0
+    var inProgress = 0
+    var completed = 0
+    var cancelled = 0
+
+    for (tarea in listaTareas) {
+        when (tarea.status) {
+            is TaskStatus.Pending -> pending++
+            is TaskStatus.InProgress -> inProgress++
+            is TaskStatus.Completed -> completed++
+            is TaskStatus.Cancelled -> cancelled++
+        }
+    }
+
+    return "Pending tasks: $pending\nTasks in progress: $inProgress\nCompleted Tasks: $completed\nCancelled tasks: $cancelled"
+}
+
 fun main() {
+
     val task1 = Task(
         TaskId(1), "Implement new feature", TaskStatus.Pending("Alice"), Priority.HIGH
     )
@@ -54,27 +73,15 @@ fun main() {
         TaskId(-4), "Update documentation", TaskStatus.Cancelled("Not needed anymore"), Priority.LOW
     )
 
-    if (task1.id.validateId()) {
-        printTaskInfo(task1)
-    } else {
-        println("Task ID ${task1.id.id} is invalid.")
-    }
+    val tasks = listOf(task1, task2, task3, task4)
 
-    if (task2.id.validateId()) {
-        printTaskInfo(task2)
-    } else {
-        println("Task ID ${task2.id.id} is invalid.")
-    }
+    println(filterStatus(tasks))
 
-    if (task3.id.validateId()) {
-        printTaskInfo(task3)
-    } else {
-        println("Task ID ${task3.id.id} is invalid.")
-    }
-
-    if (task4.id.validateId()) {
-        printTaskInfo(task4)
-    } else {
-        println("Task ID ${task4.id.id} is invalid.")
+    for (task in tasks) {
+        if (task.id.validateId()) {
+            printTaskInfo(task)
+        } else {
+            println("Invalid task ID: ${task.id.id}")
+        }
     }
 }
