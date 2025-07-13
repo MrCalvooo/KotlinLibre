@@ -41,7 +41,6 @@ fun filterStatus(tasks: List<Task>): String {
             is TaskStatus.Cancelled -> cancelled++
         }
     }
-
     return "Pending tasks: $pending\nTasks in progress: $inProgress\nCompleted Tasks: $completed\nCancelled tasks: $cancelled"
 }
 
