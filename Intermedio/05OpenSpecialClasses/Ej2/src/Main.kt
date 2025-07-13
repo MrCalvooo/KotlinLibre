@@ -14,8 +14,6 @@ enum class Priority {
 
 data class Task(val id: TaskId, val title: String, val status: TaskStatus, val priority: Priority)
 
-annotation class Sensitive
-
 fun printTaskInfo(task: Task) {
     with(task) {
         when (val currentStatus = status) {
