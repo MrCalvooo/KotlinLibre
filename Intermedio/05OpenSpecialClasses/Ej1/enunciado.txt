@@ -1,0 +1,28 @@
+Crea una jerarquía de clases para representar el estado de una tarea
+en una aplicación de productividad. Debes usar:
+
+    Una sealed class llamada TaskStatus con los siguientes estados:
+
+        Pending(val assignedTo: String)
+
+        InProgress(val progress: Int) // porcentaje del 0 al 100
+
+        Completed(val completedBy: String)
+
+        Canceled(val reason: String)
+
+    Una data class llamada Task con las siguientes propiedades:
+
+        id: TaskId (usa una inline value class)
+
+        title: String
+
+        status: TaskStatus
+
+    Una enum class llamada Priority con los valores: LOW, MEDIUM, HIGH
+
+    Una annotation class llamada @Sensitive que puedas aplicar a propiedades
+    que contengan información sensible.
+
+📌 Objetivo: Implementa las clases y luego crea una función printTaskInfo(task: Task)
+que imprima la información de la tarea según su estado.
