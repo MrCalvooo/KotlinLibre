@@ -51,11 +51,30 @@ fun main() {
     )
 
     val task4 = Task(
-        TaskId(4), "Update documentation", TaskStatus.Cancelled("Not needed anymore"), Priority.LOW
+        TaskId(-4), "Update documentation", TaskStatus.Cancelled("Not needed anymore"), Priority.LOW
     )
 
-    printTaskInfo(task1)
-    printTaskInfo(task2)
-    printTaskInfo(task3)
-    printTaskInfo(task4)
+    if (task1.id.validateId()) {
+        printTaskInfo(task1)
+    } else {
+        println("Task ID ${task1.id.id} is invalid.")
+    }
+
+    if (task2.id.validateId()) {
+        printTaskInfo(task2)
+    } else {
+        println("Task ID ${task2.id.id} is invalid.")
+    }
+
+    if (task3.id.validateId()) {
+        printTaskInfo(task3)
+    } else {
+        println("Task ID ${task3.id.id} is invalid.")
+    }
+
+    if (task4.id.validateId()) {
+        printTaskInfo(task4)
+    } else {
+        println("Task ID ${task4.id.id} is invalid.")
+    }
 }
