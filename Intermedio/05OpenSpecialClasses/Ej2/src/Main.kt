@@ -25,17 +25,7 @@ fun printTaskInfo(task: Task) {
     }
 }
 
-fun TaskId.validateId(): Boolean {
-    var valido = true
-    if (id <= 0) {
-        valido = false
-    }
-    if (id > 0) {
-        valido = true
-    }
-
-    return valido
-}
+fun TaskId.validateId(): Boolean = id > 0
 
 fun filterStatus(tasks: List<Task>): String {
     var pending = 0
