@@ -37,14 +37,14 @@ fun TaskId.validateId(): Boolean {
     return valido
 }
 
-fun filterStatus(listaTareas: List<Task>): String {
+fun filterStatus(tasks: List<Task>): String {
     var pending = 0
     var inProgress = 0
     var completed = 0
     var cancelled = 0
 
-    for (tarea in listaTareas) {
-        when (tarea.status) {
+    for (task in tasks) {
+        when (task.status) {
             is TaskStatus.Pending -> pending++
             is TaskStatus.InProgress -> inProgress++
             is TaskStatus.Completed -> completed++
@@ -53,6 +53,12 @@ fun filterStatus(listaTareas: List<Task>): String {
     }
 
     return "Pending tasks: $pending\nTasks in progress: $inProgress\nCompleted Tasks: $completed\nCancelled tasks: $cancelled"
+}
+
+fun List<Task>.filterByPriority(priority: Priority): List<Task> {
+    return this.filter {
+        it.priority == priority
+    }
 }
 
 fun main() {
@@ -84,4 +90,8 @@ fun main() {
             println("Invalid task ID: ${task.id.id}")
         }
     }
+
+    println(tasks.filterByPriority(Priority.LOW))
+    println(tasks.filterByPriority(Priority.MEDIUM))
+    println(tasks.filterByPriority(Priority.HIGH))
 }
